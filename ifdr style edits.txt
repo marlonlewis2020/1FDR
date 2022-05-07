@@ -1,0 +1,75 @@
+**************************************************
+btn-danger:
+.btn-danger {
+  color: #FFFEFE;
+  background-color: #27b90a;
+  border-color: #27b90a;
+}
+.btn-danger:hover {
+  color: #FFFEFE;
+  background-color: #45e625e5;
+  border-color: #45e625e5;
+}
+
+
+**************************************************
+bg-primary:
+.bg-primary {
+  background-color: #ffb800 !important;
+}
+
+
+**************************************************
+btn-primary:
+.btn-primary {
+  color: #616161;
+  background-color: #27b90a;
+  border-color: #27b90a;
+}
+
+.btn-primary:hover {
+  color: #616161;
+  background-color: #45e625e5;
+  border-color: #45e625e5;
+}
+
+
+**************************************************
+NAVBAR
+
+navbar-light:
+.navbar-light .navbar-brand {
+  color: #212121;
+}
+
+bg-light:
+.bg-light {
+  background-color: #F9FAFD !important;
+}
+
+
+**************************************************
+MENU
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu li {
+  position: relative;
+  right: 1px;
+  width: 300px;
+  list-style: none;
+}
+
+.menu-item {
+  color: var(--bs-dark);
+  margin: 0 0px;
+}
+
+.menu-item:hover{
+  color: var(--bs-dark);
+  font-weight: bold;
+  text-transform: uppercase;
+}
