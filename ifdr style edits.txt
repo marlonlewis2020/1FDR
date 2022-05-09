@@ -73,3 +73,15 @@ MENU
   font-weight: bold;
   text-transform: uppercase;
 }
+
+***************************************************
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=Dancing+Script&
+family=Great+Vibes&
+family=Sacramento&
+family=Parisienne&
+family=Cookie&
+display=swap" rel="stylesheet">

@@ -79,11 +79,38 @@ hr:not([size]) {
   height: 1px;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1, h3, .h3, h6, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Source Sans Pro", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Nunito Sans", cursive;
   font-weight: 700;
+  line-height: 1.2;
+  color: #212121;
+}
+
+h2, .h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Nunito Sans", cursive;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #212121;
+}
+
+h5, .h5{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Dancing Script", "Nunito Sans", cursive;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #212121;
+}
+
+h4, .h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Nunito Sans", cursive;
+  font-weight: 300;
   line-height: 1.2;
   color: #212121;
 }
@@ -18145,17 +18172,19 @@ ul {
 
 .img-landing-banner {
   overflow: hidden;
-  -webkit-transform: translateY(-3rem);
+  
+  margin-bottom: -8rem;
+  position: relative;
+  display: block;
+
+  /* -webkit-transform: translateY(-3rem);
   -ms-transform: translateY(-3rem);
   transform: translateY(-3rem);
-  margin-bottom: -8rem;
   -webkit-transition: -webkit-transform 0.4s ease;
   transition: -webkit-transform 0.4s ease;
   -o-transition: transform 0.4s ease;
   transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
-  position: relative;
-  display: block;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease; */
 }
 
 @media (min-width: 1540px) {
@@ -18513,25 +18542,53 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .menu-item {
   color: var(--bs-dark);
+  color: rgba(255, 255, 255, 1);
   margin: 0 0px;
 }
 
 .menu-item:hover{
-  color: var(--bs-dark);
+  color: rgba(0, 0, 0, 1);
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.main::before {
+body::before {
   content: "";
-  background: url("../img/logo.png") repeat;
-
-  position: absolute;
+  background: url("../img/gallery/Cocktails.jpg") repeat;
+  background-size: cover;
+  background-color: var(--bs-dark);
+  position: fixed;
+  z-index:-1;
   top: 0px;
+  right: 0px;
+  bottom: 0px;
   left: 0px;
+  opacity: 0.18;
+}
 
-  opacity: 0.3;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
+#home {
+  opacity: 0.82;
+}
+
+
+#home .img-fluid:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: 2;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) ; }
+  10% { transform: translate(-1px, -2px) ; }
+  20% { transform: translate(-3px, 0px) ; }
+  30% { transform: translate(3px, 2px) ; }
+  40% { transform: translate(1px, -1px) ; }
+  50% { transform: translate(-1px, 2px) ; }
+  60% { transform: translate(-3px, 1px) ; }
+  70% { transform: translate(3px, 1px) ; }
+  80% { transform: translate(-1px, -1px) ; }
+  90% { transform: translate(1px, 2px) ; }
+  100% { transform: translate(1px, -2px) ; }
 }
