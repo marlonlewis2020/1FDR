@@ -172,5 +172,3 @@ display=swap" rel="stylesheet">
 
 *****************************************************
 
-TechUniverse
-password123
